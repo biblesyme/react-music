@@ -1,12 +1,7 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:latest'
-    }
-    
-  }
+  agent none
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'echo \'hello\''
       }
