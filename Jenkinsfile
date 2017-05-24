@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node'
+      args 'latest'
+    }
+    
+  }
   stages {
     stage('error') {
       steps {
